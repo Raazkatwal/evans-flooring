@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Playfair+Display&family=Roboto&family=Source+Sans+Pro&display=swap');
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; 
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 64.5%;
+    --accent-color: #5F3914;
+}
+body{
+    height: 400vh;
+}
+nav{
+    width: 90%;
+    padding: 1.5rem 5rem 0 5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+}
+.logo{
+    width: 16.5rem;
+    transform: translateY(-25%);
+}
+.nav-contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-phone-num{
+    flex: 1;
+    text-align: right;
+    margin-right: 15rem;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+.fa-phone{
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+.nav-contact-icons{
+    flex: .30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-contact-links{
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+.bbb-logo{
+    width: 10rem;
+}
+.nav-contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 2;
+}
+.nav-links-container{
+    flex: .45;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links{
+    display: block;
+    font-size: 1.6rem;
+    font-family: 'Source Sans Pro', sans-serif; 
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--accent-color);
+    position: relative;
+}
+.active::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: .2rem;
+    margin-top: 1rem;
+    background-color: var(--accent-color);
+}
