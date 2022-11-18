@@ -16,8 +16,7 @@
 }
 nav{
     width: 100%;
-    height: 12%;
-    padding: 1.5rem 5rem 0 5rem;
+    height: 10%;
     background-color: rgba(255, 255, 255, 0.8);
     position: fixed;
     z-index: 999;
@@ -26,6 +25,7 @@ nav{
     width: 10.5rem;
 }
 .nav-contents{
+    padding: 0 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,39 +58,38 @@ nav{
     margin-top: 1rem;
     background-color: var(--primary-color);
 }
-.carousel, .carousel-inner, .carousel-caption{
+.swiper {
+    width: 100%;
     height: 100vh;
-}
-.carousel-item{
-    background-color: black;
-}
-.carousel-item img{
+  }
+  .slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    opacity: .7;
-    -webkit-user-drag: none;
+    position: relative;
 }
-.carousel-caption{
-    width: 40%;
-    top: 30rem;
+.slide-content{
+    position: absolute;
+    width: 50%;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.carousel-caption h1{
+.slide-content h1{
     color: white;
     font-family: var(--lato);
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 4.5rem;
-    left: 0;
     text-transform: uppercase;
-    text-align: left;
 }
-.carousel-caption a{
-    text-decoration: none;
+.swiper-btn{
     color: white;
-    position: inherit;
-    left: 0;
-    font-family: var(--lato);
 }
 .carousel-btn, .btn{
+    margin: 2rem 0;
     background: none;
     color: white;
     width: 15rem;
