@@ -58,6 +58,11 @@ nav{
     margin-top: 1rem;
     background-color: var(--primary-color);
 }
+.fa-bars{
+    display: none;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
 .swiper {
     width: 100%;
     height: 100vh;
@@ -333,4 +338,140 @@ nav{
     justify-content: space-around;
     width: 30%;
     font-size: 3rem;
+}
+.fa-brands{
+    margin: 3rem;
+}
+@media screen and (max-width: 1075px) {
+    :root{
+        font-size: 60%;
+    }
+}
+@media screen and (max-width: 875px) {
+    :root{
+        font-size: 55%;
+    }
+    .nav-links-container{
+        flex: .5;
+    }
+}
+@media screen and (max-width: 770px) {
+    :root{
+        font-size: 45%;
+    }
+    .nav-links-container{
+        flex: .5;
+    }
+    .contact-column{
+        flex-direction: column-reverse;
+    }
+    .info-container {
+        display: flex;
+        gap: 3rem;
+    }
+    .info-section{
+        gap: 1rem;
+    }
+    nav{
+        height: auto;
+    }
+}
+@media screen and (max-width: 655px) {
+    :root{
+        font-size: 50%;
+    }
+    .fa-bars{
+        display: block;
+        z-index: 999;
+    }
+    .nav-links-container{
+        display: block;
+        position: absolute;
+        right: -200rem;
+        top: 0;
+        height: 100vh;
+        transition: all ease-in-out 200ms;
+    }
+    .mbl-nav{
+        top: 0;
+        right: 0;
+        background-color: white;
+        width: 20rem;
+        padding: 5rem 2rem;
+        box-shadow: 0rem 1rem 3rem .1rem;
+    }
+    .nav-links{
+        margin: 5rem 0;
+    }
+    .active::after{
+        content: none;
+    }
+    .slide-content{
+        left: 20%;
+    }
+    .container{
+        margin: 0 5rem;
+    }
+    .image-gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+    .projects-container{
+        padding: 5rem;
+    }
+    .contact-section{
+        padding: 5rem 0;
+    }
+    .footer-icon{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    :root{
+        font-size: 60%;
+    }
+    .image-gallery{
+        grid-template-columns: 1fr;
+    }
+    .projects-container{
+        padding: 5rem;
+    }
+    .contact-section{
+        padding: 5rem 0;
+    }
+    .call-us{
+        font-size: 1.7rem;
+    }
+    .slide-content{
+        width: 70%;
+    }
+    .reviews-container{
+        grid-template-columns: 1fr;
+    }
+    .info-container{
+        display: none;
+    }
+    .form-content{
+        grid-template-columns: 1fr;
+        width: 35rem;
+     }
+     .message, .subject{
+         grid-column: 1 / 1;
+     }
+    .footer-des, .opening-hours{
+        font-size: 1.2rem;
+    }
+    .fa-brands{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    :root{
+        font-size: 50%;
+    }
+    .container{
+        margin: 0 2rem;
+    }
+    .projects-container{
+        padding: 2rem;
+    }
 }
