@@ -310,6 +310,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     color: white;
+    border-bottom: .1rem solid #817474;
 }
 .footer-des{
     font-size: 1.5rem;
@@ -321,4 +322,15 @@ nav{
 }
 .opening-hours .title{
     text-transform: uppercase;
+}
+.social-media-section{
+    display: grid;
+    place-items: center;
+    background-color: #181818;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 3rem;
 }
